@@ -2,29 +2,24 @@ import React from 'react';
 
 function Intro() {
   return (
-    <section className="intro-crev section-padding pt-0">
+    <section className="intro-crev section-padding pt-12">
       <div className="container">
         <div className="sec-head">
           <div className="row">
+           
             <div className="col-lg-7 offset-lg-5">
-              <h2 className="stroke">Web</h2>
-            </div>
-            <div className="col-lg-10 offset-lg-2">
-              <h2>Development</h2>
-            </div>
-            <div className="col-lg-7 offset-lg-5">
-              <h2 className="stroke">Experiences</h2>
+              <h2 className="stroke"> NIDFEST</h2>
             </div>
           </div>
-        </div>
+        </div> 
         <div className="row md-marg align-items-end">
           <div className="col-lg-6">
             <div className="img md-mb50">
               <img src="/assets/imgs/intro/2.jpg" alt="" />
               <div className="exp">
-                <h3>12+</h3>
+                <h3>30th</h3>
                 <h6>
-                  Years <br /> of Experiences
+                  December <br /> 2024
                 </h6>
               </div>
             </div>
@@ -32,9 +27,10 @@ function Intro() {
           <div className="col-lg-6">
             <div className="cont">
               <p className="fz-24">
-                From the inception of a project to its completion, we employ a
-                comprehensive and holistic approach that ensures all aspects and
-                stages are thoughtfully and thoroughly addressed.
+              NIDFEST is a special program created to celebrate the rich and vibrant culture of the
+Niger Delta region. From its mesmerizing landscapes to its rich traditions, the Niger
+Delta is bursting with stories waiting to be told. At NIDFEST, we&apos;re putting this treasure
+trove on the map
               </p>
             </div>
           </div>

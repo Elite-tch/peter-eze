@@ -3,15 +3,29 @@ import Lines from '@/components/common/Lines';
 import ProgressScroll from '@/components/common/ProgressScroll';
 import Cursor from '@/components/common/cusor';
 import LoadingScreen from '@/components/common/loader';
-import Demos from '@/components/landing/Demos';
-import Footer from '@/components/landing/Footer';
-import Header from '@/components/landing/Header';
-import Marq from '@/components/landing/Marq';
-import Navbar from '@/components/landing/Navbar';
-import Pages from '@/components/landing/Pages';
-import Show from '@/components/landing/Show';
-import Testimonials from '@/components/landing/Testimonials';
+//import Demos from '@/components/landing/Demos';
+//import Footer from '@/components/landing/Footer';
+//import Header from '@/components/landing/Header';
+//import Marq from '@/components/landing/Marq';
+//import Navbar from '@/components/landing/Navbar';
+//import Pages from '@/components/landing/Pages';
+//import Show from '@/components/landing/Show';
+//import Testimonials from '@/components/landing/Testimonials';
 import Script from 'next/script';
+import Navbar from '@/components/common/Navbar';
+import Header from '@/components/home-modern-studio/Header';
+
+import Intro from '@/components/home-modern-studio/Intro';
+import Numbers from '@/components/home-modern-studio/Numbers';
+import Portfolio from '@/components/home-modern-studio/Portfolio';
+import Feat from '@/components/home-modern-studio/Feat';
+import Team from '@/components/home-modern-studio/Team';
+import Testimonials from '@/components/home-modern-studio/Testimonials';
+import Clients from '@/components/common/Clients';
+import Blog from '@/components/home-main/Blog';
+import Marq2 from '@/components/common/Marq2';
+import Footer from '@/components/common/Footer';
+
 
 export const metadata = {
   title: 'webfolio',
@@ -40,11 +54,20 @@ export default function Home() {
         <div id="smooth-content">
           <main>
             <Header />
-            <Demos />
-            <Pages />
-            <Show />
-            <Marq />
-            <Testimonials />
+            
+            <Intro />
+            <Portfolio />
+            <Clients />
+          {/*  <Feat />
+            <Numbers />
+             <Marq2 />
+           
+            <Team />
+            <Testimonials /> */}
+           
+            < Blog/>
+           
+            
           </main>
           <Footer />
         </div>

@@ -33,6 +33,7 @@ function Header() {
       crossFade: true,
     },
     loop: true,
+    Autoplay:true,
     loopedSlides: 4,
     mousewheel: true,
     speed: 1500,
@@ -65,11 +66,12 @@ function Header() {
     onSwiper: function (swiper) {
       setGalleryText(swiper);
     },
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
     spaceBetween: 30,
     slidesPerView: 1,
     direction: 'vertical',
     loop: true,
+    Autoplay:true,
     loopedSlides: 4,
     touchRatio: 0.2,
     slideToClickedSlide: true,
@@ -109,7 +111,7 @@ function Header() {
                     data-background="/assets/imgs/header/s1.jpg"
                     data-overlay-dark="3"
                   >
-                    <a href="/project-details"></a>
+                    <a href="/"></a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -118,7 +120,7 @@ function Header() {
                     data-background="/assets/imgs/header/s2.jpg"
                     data-overlay-dark="3"
                   >
-                    <a href="/project-details"></a>
+                    <a href="/"></a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -127,7 +129,7 @@ function Header() {
                     data-background="/assets/imgs/header/s3.jpg"
                     data-overlay-dark="3"
                   >
-                    <a href="/project-details"></a>
+                    <a href="/"></a>
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -137,16 +139,17 @@ function Header() {
         <div className="gallery-text">
           <Swiper
             {...swiperGalleryTextOptions}
-            className="swiper-container swiper-container-initialized swiper-container-vertical"
+            className="swiper-container  swiper-container-initialized swiper-container-vertical"
           >
             <SwiperSlide>
               <div className="text">
-                <h5 className="main-color mb-15">01</h5>
-                <h1>
-                  Mails <br /> Mobile app
+                <h5 className="main-color mb-15 ">01</h5>
+                <h1>Discover, Celebrate, and
+                   <br /> Share the Niger Delta&apos;s Greatness
                 </h1>
+                <p></p>
                 <a
-                  href="/project-details"
+                  href="/"
                   className="butn-crev d-flex align-items-center mt-30"
                 >
                   <span className="hover-this">
@@ -154,7 +157,7 @@ function Header() {
                       <i className="ti-arrow-top-right"></i>
                     </span>
                   </span>
-                  <span className="text">View Project</span>
+                  <span className="text">Regiter Now</span>
                 </a>
               </div>
             </SwiperSlide>
@@ -162,7 +165,7 @@ function Header() {
               <div className="text">
                 <h5 className="main-color mb-15">02</h5>
                 <h1>
-                  Mails <br /> Mobile app
+                Experience the Untold  <br /> Wonders of the Niger Delta.
                 </h1>
                 <a
                   href="/project-details"
@@ -173,7 +176,7 @@ function Header() {
                       <i className="ti-arrow-top-right"></i>
                     </span>
                   </span>
-                  <span className="text">View Project</span>
+                  <span className="text">Explore Calendar </span>
                 </a>
               </div>
             </SwiperSlide>
@@ -181,7 +184,7 @@ function Header() {
               <div className="text">
                 <h5 className="main-color mb-15">03</h5>
                 <h1>
-                  Mails <br /> Mobile app
+                A Celebration of Heritage, <br /> Culture, and Potential
                 </h1>
                 <a
                   href="/project-details"
@@ -192,10 +195,37 @@ function Header() {
                       <i className="ti-arrow-top-right"></i>
                     </span>
                   </span>
-                  <span className="text">View Project</span>
+                  <span className="text">Register Now</span>
                 </a>
               </div>
             </SwiperSlide>
+
+
+            <SwiperSlide>
+              <div className="text">
+                <h5 className="main-color mb-15">04</h5>
+                <h1>
+                Richness of the Niger Delta; <br /> A Story Worth Sharing.
+                </h1>
+                <a
+                  href="/project-details"
+                  className="butn-crev d-flex align-items-center mt-30"
+                >
+                  <span className="hover-this">
+                    <span className="circle hover-anim">
+                      <i className="ti-arrow-top-right"></i>
+                    </span>
+                  </span>
+                  <span className="text">Explore Festival</span>
+                </a>
+              </div>
+            </SwiperSlide>
+
+
+
+
+
+
           </Swiper>
         </div>
         <div className="swiper-controls">

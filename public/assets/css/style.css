@@ -135,7 +135,7 @@ h6 {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 h2 {
@@ -4932,14 +4932,16 @@ footer.clean-footer.crev .circle-blur {
 
 .modern-slider .gallery-text {
   position: absolute;
-  width: 40vw;
+  width: 60vw;
   top: 50%;
-  left: 10%;
+  left: 3%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 9;
 }
+
+
 
 .modern-slider .gallery-text .swiper-container,
 .modern-slider .gallery-text .swiper-slide {

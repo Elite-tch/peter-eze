@@ -67,21 +67,21 @@ function Navbar() {
         >
           <ul className="navbar-nav">
             <li
-              onMouseLeave={handleDropdownMouseLeave}
-              onMouseMove={handleDropdownMouseMove}
+            //  onMouseLeave={handleDropdownMouseLeave}
+             // onMouseMove={handleDropdownMouseMove}
               className="nav-item dropdown"
             >
               <a
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="#"
+                className="nav-link"
+                //data-toggle="dropdown"
+                href="/"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Demos</span>
+                <span className="rolling-text">Home</span>
               </a>
-              <div className="dropdown-menu mega-menu">
+            {/*  <div className="dropdown-menu mega-menu">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg">
@@ -135,7 +135,7 @@ function Navbar() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </li>
             <li
               onMouseLeave={handleDropdownMouseLeave}
@@ -150,7 +150,7 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Pages</span>
+                <span className="rolling-text">About</span>
               </a>
               <ul className="dropdown-menu">
                 <li>
@@ -159,6 +159,13 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
+                  <a className="dropdown-item" href="/page-team">
+                    Partners and Sponsors
+                  </a>
+                </li>
+              
+              
+             {/*  <li>
                   <a className="dropdown-item" href="/page-services">
                     Services
                   </a>
@@ -168,11 +175,7 @@ function Navbar() {
                     Services Details
                   </a>
                 </li>
-                <li>
-                  <a className="dropdown-item" href="/page-team">
-                    Our Team
-                  </a>
-                </li>
+              
                 <li>
                   <a className="dropdown-item" href="/page-team-details">
                     Team Details
@@ -188,11 +191,11 @@ function Navbar() {
                     FAQS
                   </a>
                 </li>
-                <li>
+                <li> 
                   <a className="dropdown-item" href="/page-404">
                     Error 404
-                  </a>
-                </li>
+                  </a> 
+                </li> */}
               </ul>
             </li>
             <li
@@ -208,14 +211,28 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Portfolio</span>
+                <span className="rolling-text">Gallery</span>
               </a>
               <div className="dropdown-menu">
+              <a className="dropdown-item" href="/portfolio-masonry">
+                  Gallery
+                </a>
+                <a
+                  className="dropdown-item"
+                  href="/portfolio-gallery"
+                >
+                  9 State Governors Gallery
+                </a>
+                <a className="dropdown-item" href="/project-details">
+                  Project Details
+                </a>
+{/*
+
                 <a className="dropdown-item" href="/portfolio-gallery">
                   Gallery
                 </a>
                 <a className="dropdown-item" href="/portfolio-creative">
-                  Portfolio Creative
+                  9 States Governors Gallery
                 </a>
                 <a
                   className="dropdown-item"
@@ -226,30 +243,28 @@ function Navbar() {
                 <a className="dropdown-item" href="/portfolio-grid">
                   Portfolio Grid
                 </a>
-                <a className="dropdown-item" href="/portfolio-masonry">
-                  Portfolio Masonry
-                </a>
+                
                 <a className="dropdown-item" href="/project-details">
                   Project Details
-                </a>
+                </a> */}
               </div>
             </li>
             <li
-              onMouseLeave={handleDropdownMouseLeave}
-              onMouseMove={handleDropdownMouseMove}
+             // onMouseLeave={handleDropdownMouseLeave}
+            //  onMouseMove={handleDropdownMouseMove}
               className="nav-item dropdown"
             >
               <a
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="#"
+                className="nav-link"
+               // data-toggle="dropdown"
+                href="/blog-grid-3column"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 <span className="rolling-text">Blogs</span>
               </a>
-              <div className="dropdown-menu">
+           {/*  <div className="dropdown-menu">
                 <a className="dropdown-item" href="/blog-classic">
                   Blog Standerd
                 </a>
@@ -262,11 +277,11 @@ function Navbar() {
                 <a className="dropdown-item" href="/blog-details">
                   Blog Details
                 </a>
-              </div>
+              </div> */}
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/page-contact">
-                <span className="rolling-text">Contact Us</span>
+              <a className="nav-link" href="/page-FAQ">
+                <span className="rolling-text">Event Calender</span>
               </a>
             </li>
           </ul>
