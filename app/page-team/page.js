@@ -13,10 +13,10 @@ import Header from '@/components/page-team/Header';
 import Intro from '@/components/page-team/Intro';
 
 export const metadata = {
-  title: 'webfolio',
+  title: 'NIDFEST',
   icons: {
-    icon: '/assets/imgs/favicon.ico',
-    shortcut: '/assets/imgs/favicon.ico',
+    icon: 'https://res.cloudinary.com/dnbnev9lr/image/upload/v1734444342/New_Project__20_-removebg-preview_1_md87x7.png',
+    shortcut: 'https://res.cloudinary.com/dnbnev9lr/image/upload/v1734444342/New_Project__20_-removebg-preview_1_md87x7.png',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',

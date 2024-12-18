@@ -1,0 +1,39 @@
+.item {
+    position: relative;
+  }
+  
+  .img img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    
+    left: 0;
+    
+    bottom: 0;
+    background-color:black ; /* Black backgrbound with transparency */
+    color: #fff; /* White text */
+    display: flex;
+    align-items: flex-end; /* Align text to the bottom */
+    padding: 20px;
+  }
+  
+  
+  .custom-modal .modal-dialog {
+    width: 100%; /* Default size for desktop */
+    max-width: none;
+  }
+  .designs:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-modal .modal-dialog {
+      width: 90%; /* Adjust size for smaller screens */
+    }
+  }
+  

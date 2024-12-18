@@ -43,7 +43,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bord blur">
       <div className="container o-hidden">
         <a className="logo icon-img-100" href="#">
-          <img src="/assets/imgs/logo-light.png" alt="logo" />
+          <img src="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734444342/New_Project__20_-removebg-preview_1_md87x7.png" alt="logo" />
         </a>
 
         <button
@@ -214,12 +214,12 @@ function Navbar() {
                 <span className="rolling-text">Gallery</span>
               </a>
               <div className="dropdown-menu">
-              <a className="dropdown-item" href="/portfolio-masonry">
+              <a className="dropdown-item" href="/portfolio-gallery">
                   Gallery
                 </a>
                 <a
                   className="dropdown-item"
-                  href="/portfolio-gallery"
+                  href="/portfolio-grid"
                 >
                   9 State Governors Gallery
                 </a>

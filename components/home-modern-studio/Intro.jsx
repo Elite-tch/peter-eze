@@ -15,7 +15,7 @@ function Intro() {
         <div className="row md-marg align-items-end">
           <div className="col-lg-6">
             <div className="img md-mb50">
-              <img src="/assets/imgs/intro/2.jpg" alt="" />
+              <img src="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734365487/2149029454_ubzp5t.jpg" alt="" />
               <div className="exp">
                 <h3>30th</h3>
                 <h6>

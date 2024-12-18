@@ -1,15 +1,16 @@
 'use client';
 import React from 'react';
-import { Navigation } from 'swiper';
+import { Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 function Testimonials() {
   const swiperOptions = {
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
     slidesPerView: 'auto',
 
     spaceBetween: 30,
     loop: true,
+    autoplay: { delay: 3000, disableOnInteraction: false },
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -36,10 +37,10 @@ function Testimonials() {
         <div className="sec-head mb-80">
           <div className="d-flex align-items-center">
             <div>
-              <span className="sub-title main-color mb-5">Testimonials</span>
+              <span className="sub-title main-color mb-5">Importance</span>
               <h3 className="fw-600 fz-50 text-u d-rotate wow">
                 <span className="rotate-text">
-                  Trusted <span className="fw-200">by Clients.</span>
+                WHY <span className="fw-200">NIDEFEST MATTERS.</span>
                 </span>
               </h3>
             </div>
@@ -70,45 +71,15 @@ function Testimonials() {
             <SwiperSlide>
               <div className="item">
                 <div className="cont">
-                  <h6 className="sub-title mb-15">Design Quality</h6>
+                  <h6 className="sub-title mb-15">We Preserve Culture</h6>
                   <div className="text">
                     <p>
-                      “ I have been hiring people in this space for a number of
-                      years and I have never seen this level of
-                      professionalism.”
+                       Every performance, every bite of food, every handmade craft
+                      helps keep the rich traditions of the Niger Delta alive.
                     </p>
                   </div>
                 </div>
-                <div className="info">
-                  <div className="d-flex align-items-center">
-                    <div>
-                      <div className="img fit-img">
-                        <img src="/assets/imgs/testim/t1.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div className="ml-20">
-                      <h6 className="fz-18">Haitham Al-Dukhin</h6>
-                      <span className="p-color opacity-8 fz-15 mt-5">
-                        Envato Customer
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="item">
-                <div className="cont">
-                  <h6 className="sub-title mb-15">Design Quality</h6>
-                  <div className="text">
-                    <p>
-                      “ I have been hiring people in this space for a number of
-                      years and I have never seen this level of professionalism.
-                      ”
-                    </p>
-                  </div>
-                </div>
-                <div className="info">
+               {/*       <div className="info">
                   <div className="d-flex align-items-center">
                     <div>
                       <div className="img fit-img">
@@ -122,26 +93,26 @@ function Testimonials() {
                       </span>
                     </div>
                   </div>
-                </div>
+                </div>*/}
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="item">
                 <div className="cont">
-                  <h6 className="sub-title mb-15">Design Quality</h6>
+                  <h6 className="sub-title mb-15"> We Empower Communities</h6>
                   <div className="text">
                     <p>
-                      “ I have been hiring people in this space for a number of
-                      years and I have never seen this level of professionalism.
-                      ”
+                    By spotlighting local artists, traders, and farmers, we create
+ opportunities that fuel growth and prosperity.
+
                     </p>
                   </div>
                 </div>
-                <div className="info">
+         {/*       <div className="info">
                   <div className="d-flex align-items-center">
                     <div>
                       <div className="img fit-img">
-                        <img src="/assets/imgs/testim/t3.jpg" alt="" />
+                        <img src="/assets/imgs/testim/t2.jpg" alt="" />
                       </div>
                     </div>
                     <div className="ml-20">
@@ -151,7 +122,62 @@ function Testimonials() {
                       </span>
                     </div>
                   </div>
+                </div>*/}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="item">
+                <div className="cont">
+                  <h6 className="sub-title mb-15"> We Unite People</h6>
+                  <div className="text">
+                    <p>
+                    Whether you’re from the Niger Delta or the other side of the globe,
+                    NIDEFEST is a shared space to celebrate, connect, and belong.
+                    </p>
+                  </div>
                 </div>
+                {/*       <div className="info">
+                  <div className="d-flex align-items-center">
+                    <div>
+                      <div className="img fit-img">
+                        <img src="/assets/imgs/testim/t2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="ml-20">
+                      <h6 className="fz-18">Haitham Al-Dukhin</h6>
+                      <span className="p-color opacity-8 fz-15 mt-5">
+                        Envato Customer
+                      </span>
+                    </div>
+                  </div>
+                </div>*/}
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="item">
+                <div className="cont">
+                  <h6 className="sub-title mb-15"> We Inspire Tourism</h6>
+                  <div className="text">
+                    <p>
+                    Showcasing the Niger Delta’s wonders leaves visitors with lasting memories and newfound admiration.</p>
+                  </div>
+                </div>
+                {/*       <div className="info">
+                  <div className="d-flex align-items-center">
+                    <div>
+                      <div className="img fit-img">
+                        <img src="/assets/imgs/testim/t2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div className="ml-20">
+                      <h6 className="fz-18">Haitham Al-Dukhin</h6>
+                      <span className="p-color opacity-8 fz-15 mt-5">
+                        Envato Customer
+                      </span>
+                    </div>
+                  </div>
+                </div>*/}
               </div>
             </SwiperSlide>
           </Swiper>

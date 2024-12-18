@@ -33,7 +33,7 @@ function Header() {
       crossFade: true,
     },
     loop: true,
-    Autoplay:true,
+    autoplay: { delay: 3000, disableOnInteraction: false },
     loopedSlides: 4,
     mousewheel: true,
     speed: 1500,
@@ -71,7 +71,7 @@ function Header() {
     slidesPerView: 1,
     direction: 'vertical',
     loop: true,
-    Autoplay:true,
+    autoplay: { delay: 3000, disableOnInteraction: false },
     loopedSlides: 4,
     touchRatio: 0.2,
     slideToClickedSlide: true,
@@ -108,7 +108,7 @@ function Header() {
                 <SwiperSlide>
                   <div
                     className="bg-img"
-                    data-background="/assets/imgs/header/s1.jpg"
+                    data-background="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734365449/pexels-ogonna-sylvester-ogbu-1047836026-20410318_xyswxi.jpg"
                     data-overlay-dark="3"
                   >
                     <a href="/"></a>
@@ -117,7 +117,7 @@ function Header() {
                 <SwiperSlide>
                   <div
                     className="bg-img"
-                    data-background="/assets/imgs/header/s2.jpg"
+                    data-background="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734365481/pexels-efrem-efre-2786187-28284658_aulnph.jpg"
                     data-overlay-dark="3"
                   >
                     <a href="/"></a>
@@ -126,7 +126,16 @@ function Header() {
                 <SwiperSlide>
                   <div
                     className="bg-img"
-                    data-background="/assets/imgs/header/s3.jpg"
+                    data-background="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734365450/pexels-safari-consoler-3290243-10823273_llxaho.jpg"
+                    data-overlay-dark="3"
+                  >
+                    <a href="/"></a>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div
+                    className="bg-img"
+                    data-background="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734365448/pexels-jenyzest-20438388_pc6vyi.jpg"
                     data-overlay-dark="3"
                   >
                     <a href="/"></a>
@@ -144,9 +153,7 @@ function Header() {
             <SwiperSlide>
               <div className="text">
                 <h5 className="main-color mb-15 ">01</h5>
-                <h1>Discover, Celebrate, and
-                   <br /> Share the Niger Delta&apos;s Greatness
-                </h1>
+                <h1>Discover,<br /> Celebrate</h1>
                 <p></p>
                 <a
                   href="/"
@@ -165,7 +172,7 @@ function Header() {
               <div className="text">
                 <h5 className="main-color mb-15">02</h5>
                 <h1>
-                Experience the Untold  <br /> Wonders of the Niger Delta.
+                Experience<br />Niger Delta.
                 </h1>
                 <a
                   href="/project-details"
@@ -184,7 +191,7 @@ function Header() {
               <div className="text">
                 <h5 className="main-color mb-15">03</h5>
                 <h1>
-                A Celebration of Heritage, <br /> Culture, and Potential
+                Heritage, <br /> Culture
                 </h1>
                 <a
                   href="/project-details"
@@ -205,7 +212,7 @@ function Header() {
               <div className="text">
                 <h5 className="main-color mb-15">04</h5>
                 <h1>
-                Richness of the Niger Delta; <br /> A Story Worth Sharing.
+                Niger Delta&apos;s  <br /> Richness.
                 </h1>
                 <a
                   href="/project-details"

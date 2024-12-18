@@ -4,17 +4,17 @@ import ProgressScroll from '@/components/common/ProgressScroll';
 import Cursor from '@/components/common/cusor';
 import LoadingScreen from '@/components/common/loader';
 import Footer from '@/components/common/Footer';
-import Marq2 from '@/components/common/Marq2';
+
 import Navbar from '@/components/common/Navbar';
 import Script from 'next/script';
 import Header from '@/components/p-grid/Header';
 import Portfolio from '@/components/p-grid/Portfolio';
 
 export const metadata = {
-  title: 'webfolio',
+  title: 'NIDFEST',
   icons: {
-    icon: '/assets/imgs/favicon.ico',
-    shortcut: '/assets/imgs/favicon.ico',
+    icon: 'https://res.cloudinary.com/dnbnev9lr/image/upload/v1734444342/New_Project__20_-removebg-preview_1_md87x7.png',
+    shortcut: 'https://res.cloudinary.com/dnbnev9lr/image/upload/v1734444342/New_Project__20_-removebg-preview_1_md87x7.png',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',
@@ -37,7 +37,7 @@ export default function Home() {
           <main className="main-bg o-hidden">
             <Header />
             <Portfolio />
-            <Marq2 />
+          
           </main>
           <Footer />
         </div>

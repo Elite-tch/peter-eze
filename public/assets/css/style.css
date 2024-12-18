@@ -189,6 +189,7 @@ img {
   height: auto;
 }
 
+
 figure {
   margin: 0;
 }
@@ -4958,7 +4959,7 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .modern-slider .gallery-text .text {
-  width: 100%;
+  width: 70%;
 }
 
 .modern-slider .gallery-text .text h4 {

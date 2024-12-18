@@ -4,7 +4,7 @@ function Services() {
   return (
     <section className="services-inline2 section-padding sub-bg bord-bottom-grd bord-top-grd">
       <div className="container ontop">
-        <div className="sec-head mb-80">
+      <div className="sec-head mb-80">
           <div className="d-flex align-items-center">
             <div>
               <span className="sub-title main-color mb-5">Our Specialize</span>
@@ -24,7 +24,7 @@ function Services() {
               <span className="icon ti-arrow-top-right"></span>
             </div>
           </div>
-        </div>
+        </div>  
         <div className="item">
           <div className="row md-marg align-items-end">
             <div className="col-lg-4">
