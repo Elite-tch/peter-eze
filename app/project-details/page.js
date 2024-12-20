@@ -39,12 +39,21 @@ export default function Home() {
         <div id="smooth-content">
           <main className="main-bg o-hidden">
             <Header />
-            <Challenge />
+         {/* <Challenge />
             <Works />
             <Solution />
             <Wroks2 />
-            <Next />
-          </main>
+            <Next /> */}
+
+
+
+
+
+
+
+
+            
+          </main> 
           <Footer />
         </div>
       </div>

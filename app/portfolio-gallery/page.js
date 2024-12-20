@@ -36,8 +36,9 @@ export default function Home() {
         <div id="smooth-content">
           <main className="main-bg o-hidden">
             <Header />
+           
             <Portfolio />
-            <Marq2 />
+          
           </main>
           <Footer />
         </div>
