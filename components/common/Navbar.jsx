@@ -137,35 +137,38 @@ function Navbar() {
                 </div>
               </div> */}
             </li>
+            
             <li
-              onMouseLeave={handleDropdownMouseLeave}
-              onMouseMove={handleDropdownMouseMove}
+             // onMouseLeave={handleDropdownMouseLeave}
+             // onMouseMove={handleDropdownMouseMove}
               className="nav-item dropdown"
             >
+          
+          
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link "
                 data-toggle="dropdown"
-                href="#"
+                href="/about-nidefeast"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 <span className="rolling-text">About</span>
               </a>
-              <ul className="dropdown-menu">
+              {/*  <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="/page-about">
+                  <a className="dropdown-item" href="/about-nidefeast">
                     About Us
                   </a>
                 </li>
-                <li>
+               <li>
                   <a className="dropdown-item" href="/page-team">
                     Partners and Sponsors
                   </a>
                 </li>
               
               
-             {/*  <li>
+              <li>
                   <a className="dropdown-item" href="/page-services">
                     Services
                   </a>
@@ -195,8 +198,8 @@ function Navbar() {
                   <a className="dropdown-item" href="/page-404">
                     Error 404
                   </a> 
-                </li> */}
-              </ul>
+                </li> 
+              </ul>*/}
             </li>
             <li
               onMouseLeave={handleDropdownMouseLeave}
@@ -214,19 +217,19 @@ function Navbar() {
                 <span className="rolling-text">Gallery</span>
               </a>
               <div className="dropdown-menu">
-              <a className="dropdown-item" href="/portfolio-gallery">
+              <a className="dropdown-item" href="/gallery">
                   Gallery
                 </a>
                 <a
                   className="dropdown-item"
-                  href="/portfolio-grid"
+                  href="/9state-governors-gallery"
                 >
                   9 State Governors Gallery
                 </a>
-                <a className="dropdown-item" href="/project-details">
+           {/*     <a className="dropdown-item" href="/project-details">
                   Project Details
                 </a>
-{/*
+
 
                 <a className="dropdown-item" href="/portfolio-gallery">
                   Gallery
@@ -289,7 +292,7 @@ function Navbar() {
 
         <div className="contact-button">
           <a
-            href="/page-contact"
+            href="/contact-us"
             className="butn butn-sm butn-bg main-colorbg radius-5"
           >
             <span className="text">Let&apos;s contact</span>

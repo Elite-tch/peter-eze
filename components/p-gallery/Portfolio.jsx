@@ -4,7 +4,7 @@ import { useState } from 'react';
 const categories = [
   {
     name: 'Abia State',
-    images: ['/assets/imgs/works/grid/1.jpg', '/assets/imgs/works/grid/5.jpg'],
+    images: ['/assets/imgs/works/grid/1.jpg', '/assets/imgs/works/grid/5.jpg','/assets/imgs/works/grid/3.jpg','/assets/imgs/works/grid/2.jpg','/assets/imgs/works/grid/4.jpg','/assets/imgs/works/grid/5.jpg','/assets/imgs/works/grid/6.jpg'],
     text: 'Abia is a cultural and commercial hub, with Umuahia&apos;s history and Aba&apos;s entrepreneurial energy. The state is rich in traditional music, dance, and festivals.',
     videos: [], // Add video URLs here if applicable
   },
@@ -127,144 +127,178 @@ function Portfolio() {
         ) : (
           // Render the selected category view
           <div className="selected-category">
-            <button className="btn text-white bg-black mb-4" onClick={handleBackClick}>
-              <a>
-                <span className="bnn ti-arrow-left"></span>
-              </a>
-            </button>
-            <h3 className="mb-4">{selectedCategory.name}</h3>
-            <div className="row">
-              {selectedCategory.images.slice(1).map((image, index) => (
-                <div key={index + 1} className="col-lg-4 mb-4">
-                  <div
-                    className="img"
-                    onClick={() => handleImageClick(image)}
-                    style={{ cursor: 'pointer' }}
-                  >
-                    <img
-                      src={image}
-                      alt={`Image ${index + 1}`}
-                      className="hover-effect"
-                    />
-                  </div>
+          <button className="btn text-white bg-black mb-4" onClick={handleBackClick}>
+            <a>
+              <span className="bnn ti-arrow-left"></span>
+            </a>
+          </button>
+          <h3 className="mb-4">{selectedCategory.name}</h3>
+          <div className="gallery-grid">
+            {selectedCategory.images.slice(1).map((image, index) => (
+              <div
+                key={index + 1}
+                className="gallery-item"
+                onClick={() => handleImageClick(image)}
+                style={{ cursor: 'pointer' }}
+              >
+                <img
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                  className="hover-effect"
+                />
+              </div>
+            ))}
+        
+            {selectedCategory.videos &&
+              selectedCategory.videos.map((video, index) => (
+                <div
+                  key={index}
+                  className="gallery-item"
+                  onClick={() => handleVideoClick(video)}
+                  style={{ cursor: 'pointer' }}
+                >
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={video}
+                    title={`${selectedCategory.name} Video ${index + 1}`}
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    className="hover-effect"
+                  ></iframe>
                 </div>
               ))}
-
-              {selectedCategory.videos &&
-                selectedCategory.videos.map((video, index) => (
-                  <div key={index} className="col-lg-4 mb-4">
-                    <div
-                      className="video-thumbnail"
-                      onClick={() => handleVideoClick(video)}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      <iframe
-                        width="100%"
-                        height="360"
-                        src={video}
-                        title={`${selectedCategory.name} Video ${index + 1}`}
-                        frameBorder="0"
-                        allow="autoplay; encrypted-media"
-                        allowFullScreen
-                        className="hover-effect"
-                      ></iframe>
-                    </div>
-                  </div>
-                ))}
-            </div>
           </div>
-        )}
-
-        {/* Modal for full-screen image */}
-        {selectedImage && (
-          <>
-            <div className="modal-overlay" onClick={closeModal}></div>
-            <div className="modal">
-              <div className="modal-content">
-                <button className="close-btn" onClick={closeModal}>X</button>
-                <img src={selectedImage} alt="Selected" />
-              </div>
-            </div>
-          </>
-        )}
-
-        {/* Modal for full-screen video */}
-        {selectedVideo && (
-          <>
-            <div className="modal-overlay" onClick={closeModal}></div>
-            <div className="modal">
-              <div className="modal-content">
-                <button className="close-btn" onClick={closeModal}>X</button>
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={selectedVideo}
-                  title="Selected Video"
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </>
-        )}
-      </div>
-
-      {/* Footer */}
-      <footer className="footer mt-4">
-        <div className="container">
-          <p>&copy; 2024 Your Website Name. All rights reserved.</p>
-        </div>
-      </footer>
-
-      {/* Styles for hover effect and modal */}
-      <style jsx>{`
-        .hover-effect {
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .hover-effect:hover {
-          transform: scale(1.05);
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-        .modal-overlay {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.1);
-          z-index: 1000;
-        }
-        .modal {
-          position: fixed;
-          top: 55%;
-          left: 50%;
-          width: 70%;
-          height: auto;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          z-index: 1000;
-          transform: translate(-50%, -50%);
-        }
-        .modal-content iframe,
-        .modal-content img {
-          width: 100%;
-          height: 80vh;
-        }
-        .close-btn {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          background-color: rgba(0, 0, 0, 0.5);
-          color: white;
-          border: none;
-          padding:6px 10px;
-          font-size: 18px;
-          cursor: pointer;
-        }
         
-      `}</style>
+                  {selectedImage && (
+                    <>
+                      <div className="modal-overlay" onClick={closeModal}>
+                      <button className="close-btn" onClick={closeModal}>
+                            X
+                          </button>
+                      </div>
+                      <div className="modal">
+                        <div className="modal-content">
+                       
+                          <img src={selectedImage} alt="Selected" />
+                        </div>
+                      </div>
+                    </>
+                  )}
+                
+                  {/* Modal for full-screen video */}
+                  {selectedVideo && (
+                    <>
+                      <div className="modal-overlay" onClick={closeModal}></div>
+                      <div className="modal">
+                        <div className="modal-content">
+                          <button className="close-btn" onClick={closeModal}>
+                            X
+                          </button>
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src={selectedVideo}
+                            title="Selected Video"
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+        );
+        <style jsx>{`
+          .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+          }
+        
+          .gallery-item {
+            position: relative;
+            overflow: hidden;
+          }
+        
+          .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+        
+          .hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+        
+          .hover-effect:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+          }
+        
+          .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+          }
+        
+          .modal {
+            position: fixed;
+            top: 55%;
+            left: 50%;
+            max-width: 90%;
+            max-height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transform: translate(-50%, -50%);
+          }
+        
+          .modal-content {
+            position: relative;
+            width: auto;
+            height: auto;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+          }
+        
+          .modal-content img {
+            width: auto;
+            height: auto;
+          }
+        
+          .close-btn {
+  position: absolute;
+  top: 15%;
+  right: 1%;
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly darker for better visibility */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1050; /* Ensure it's on top of other elements */
+  border-radius: 4px; /* Optional: Rounded edges */
+}
+
+.close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Hover effect */
+  color: black;
+}
+
+        `}</style>
+        
     </section>
   );
 }

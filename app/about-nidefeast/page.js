@@ -48,10 +48,11 @@ export default function Home() {
          {/*   <Services />
  <Clients />
  <Marq2 />
+  <Blog />
             <Team /> */}
             <Testimonials />
            <JoinUs/>
-            <Blog />
+           
            
           </main>
           <Footer />
