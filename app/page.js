@@ -57,8 +57,10 @@ export default function Home() {
             
             <Intro />
             <Portfolio />
-            <Clients />
-          {/*  <Feat />
+           
+          {/* 
+           <Clients />
+           <Feat />
             <Numbers />
              <Marq2 />
            
