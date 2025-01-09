@@ -260,7 +260,7 @@ function Navbar() {
               <a
                 className="nav-link"
                // data-toggle="dropdown"
-                href="/blog-grid-3column"
+                href="/blogs"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"

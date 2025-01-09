@@ -25,7 +25,7 @@ function Portfolio() {
     },
   };
   return (
-    <section className="work-crev sub-bg">
+    <section className="work-crev sub-bg " style={{overflow: 'hidden'}}>
       <div className="container section-padding position-re bord-top-grd bord-bottom-grd">
         <div className="sec-head mb-80">
        <div className="d-flex align-items-center">

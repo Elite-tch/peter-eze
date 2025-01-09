@@ -6,8 +6,8 @@ import LoadingScreen from '@/components/common/loader';
 import Footer from '@/components/common/Footer';
 import Navbar from '@/components/common/Navbar';
 import Script from 'next/script';
-import Header from '@/components/blog-grid-3column/Header';
-import Blogs from '@/components/blog-grid-3column/Blogs';
+import Header from '@/components/blog/Header';
+import Blogs from '@/components/blog/Blogs';
 export const metadata = {
   title: 'NIDFEST',
   icons: {
