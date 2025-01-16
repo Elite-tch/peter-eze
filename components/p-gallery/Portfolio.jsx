@@ -1,4 +1,6 @@
-'use client';
+"use client";
+
+
 import { useState } from 'react';
 
 const categories = [
@@ -10,7 +12,7 @@ const categories = [
   },
   {
     name: 'Akwa Ibom State',
-    images: ['/assets/imgs/works/grid/1.jpg', '/assets/imgs/works/grid/1.jpg'],
+    images: ['/assets/imgs/works/grid/1.jpg', '/assets/imgs/works/grid/1.jpg' , '/assets/imgs/works/grid/1.jpg'],
     text: 'Akwa Ibom is famous for its beautiful beaches, rich cuisine, and oil reserves, home to the Ibibio, Annang, and Oron people. Its capital, Uyo, blends modernity with cultural heritage.',
     videos: [], // Add video URLs here if applicable
   },
@@ -144,7 +146,8 @@ function Portfolio() {
                 <img
                   src={image}
                   alt={`Image ${index + 1}`}
-                  className="hover-effect"
+                  className="hover-effect "
+                  
                 />
               </div>
             ))}
@@ -212,11 +215,11 @@ function Portfolio() {
                 </div>
               )}
             </div>
-        );
+        
         <style jsx>{`
           .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 16px;
           }
         
@@ -230,6 +233,7 @@ function Portfolio() {
             height: 100%;
             object-fit: cover;
             display: block;
+           
           }
         
           .hover-effect {
