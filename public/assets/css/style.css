@@ -23,8 +23,8 @@
 }
 
 body {
-  color: #fff;
-  background-color: #0f0f0f;
+  color: #1a1a1a;
+  background-color: #ffffff;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -195,35 +195,35 @@ figure {
 }
 
 .main-color {
-  color: #fd5b38 !important;
+  color: #016948 !important;
 }
 
 .main-colorbg {
-  background: #fd5b38 !important;
+  background: #016948 !important;
 }
 
 .main-color2 {
-  color: #caff33 !important;
+  color: #007a3d !important;
 }
 
 .main-colorbg2 {
-  background: #caff33 !important;
+  background: #007a3d !important;
 }
 
 .main-bg {
-  background: #0f0f0f !important;
+  background: #ffffff !important;
 }
 
 .sub-bg {
-  background: #121212 !important;
+  background: #f8faf9 !important;
 }
 
 .sub-bg2 {
-  background: #000 !important;
+  background: #ffffff !important;
 }
 
 .p-color {
-  color: #c6c8c9;
+  color: #4a5568;
 }
 
 .btn:hover,
@@ -659,7 +659,7 @@ figure {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #fd5b38;
+  background: #016948;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -669,7 +669,7 @@ figure {
 }
 
 .btn-circle:hover {
-  border-color: #fd5b38;
+  border-color: #016948;
 }
 
 .btn-circle:hover:after {
@@ -928,7 +928,7 @@ figure {
 }
 
 .vi-more:hover .icon {
-  background: #fd5b38;
+  background: #016948;
 }
 
 /* Cursor
@@ -3745,7 +3745,7 @@ body.loaded {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #fd5b38;
+  background: #016948;
   position: absolute;
   top: 50%;
   left: 15px;
@@ -4004,7 +4004,7 @@ body.loaded {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  background: #fd5b38;
+  background: #016948;
   color: #0c0c0c;
   font-size: 20px;
 }
@@ -4242,7 +4242,7 @@ body.loaded {
 }
 
 .sidebar .widget.tags a:hover {
-  background: #fd5b38;
+  background: #016948;
 }
 
 .blog-main .item .content {
@@ -4358,7 +4358,7 @@ body.loaded {
 
 .main-post .info-area .tags a:hover,
 .main-post .info-area .share-icon a:hover {
-  background: #fd5b38;
+  background: #016948;
   color: #1d1d1d;
 }
 
@@ -4881,9 +4881,9 @@ footer.clean-footer.crev .circle-blur {
   left: -30vw;
   width: 80vw;
   height: 80vw;
-  background: -webkit-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: -o-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: radial-gradient(circle, #ff3700 0%, transparent 66%);
+  background: -webkit-radial-gradient(circle, #007a3d 0%, transparent 66%);
+  background: -o-radial-gradient(circle, #007a3d 0%, transparent 66%);
+  background: radial-gradient(circle, #007a3d 0%, transparent 66%);
   opacity: 0.5;
   z-index: -1;
 }
@@ -4909,9 +4909,9 @@ footer.clean-footer.crev .circle-blur {
   right: -20vw;
   width: 50vw;
   height: 50vw;
-  background: -webkit-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: -o-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: radial-gradient(circle, #ff3700 0%, transparent 66%);
+  background: -webkit-radial-gradient(circle, #007a3d 0%, transparent 66%);
+  background: -o-radial-gradient(circle, #007a3d 0%, transparent 66%);
+  background: radial-gradient(circle, #007a3d 0%, transparent 66%);
   opacity: 0.35;
   z-index: -1;
 }
@@ -5093,7 +5093,7 @@ footer.clean-footer.crev .circle-blur {
   height: 85px;
   line-height: 85px;
   text-align: center;
-  background: #fd5b38;
+  background: #016948;
   position: absolute;
   top: 0;
   left: 100px;
@@ -5139,7 +5139,7 @@ footer.clean-footer.crev .circle-blur {
   line-height: 60px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #fd5b38;
+  border: 1px solid #016948;
   margin-left: -20px;
 }
 
@@ -5166,9 +5166,9 @@ footer.clean-footer.crev .circle-blur {
   left: -30vw;
   width: 80vw;
   height: 80vw;
-  background: -webkit-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: -o-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: radial-gradient(circle, #ff3700 0%, transparent 66%);
+  background: -webkit-radial-gradient(circle, #007a3d 0%, transparent 66%);
+  background: -o-radial-gradient(circle, #007a3d 0%, transparent 66%);
+  background: radial-gradient(circle, #007a3d 0%, transparent 66%);
   opacity: 0.5;
   z-index: 2;
 }
@@ -5286,9 +5286,9 @@ footer.clean-footer.crev .circle-blur {
   left: 5vw;
   width: 80vw;
   height: 80vw;
-  background: -webkit-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: -o-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: radial-gradient(circle, #ff3700 0%, transparent 66%);
+  background: -webkit-radial-gradient(circle, #007a3d 0%, transparent 66%);
+  background: -o-radial-gradient(circle, #007a3d 0%, transparent 66%);
+  background: radial-gradient(circle, #007a3d 0%, transparent 66%);
   opacity: 0.3;
   z-index: -1;
 }
@@ -5336,9 +5336,9 @@ footer.clean-footer.crev .circle-blur {
   left: 10vw;
   width: 80vw;
   height: 80vw;
-  background: -webkit-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: -o-radial-gradient(circle, #ff3700 0%, transparent 66%);
-  background: radial-gradient(circle, #ff3700 0%, transparent 66%);
+  background: -webkit-radial-gradient(circle, #007a3d 0%, transparent 66%);
+  background: -o-radial-gradient(circle, #007a3d 0%, transparent 66%);
+  background: radial-gradient(circle, #007a3d 0%, transparent 66%);
   opacity: 0.3;
   z-index: -1;
 }
@@ -6113,7 +6113,7 @@ footer.clean-footer.crev .circle-blur {
 
 .filtering span.active {
   opacity: 1;
-  color: #fd5b38;
+  color: #016948;
 }
 
 .filtering span.text {
@@ -6413,7 +6413,7 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .services-clas .item a:hover {
-  background: #fd5b38;
+  background: #016948;
 }
 
 .services-inline2 .item {
@@ -6464,7 +6464,7 @@ footer.clean-footer.crev .circle-blur {
   line-height: 100px;
   text-align: center;
   border-radius: 50%;
-  background: #fd5b38;
+  background: #016948;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -7257,8 +7257,8 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .team .item .social .links a:hover {
-  background: #fd5b38;
-  border-color: #fd5b38;
+  background: #016948;
+  border-color: #016948;
   color: #111;
 }
 
@@ -7385,7 +7385,7 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .team-crev2 .item .img .social a:hover {
-  background: #fd5b38;
+  background: #016948;
 }
 
 .team-crev2 .item:hover .img .social {

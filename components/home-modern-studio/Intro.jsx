@@ -8,15 +8,15 @@ function Intro() {
           <div className="row">
            
             <div className="col-lg-7 offset-lg-5">
-              <h2 className="stroke"> NIDFEST</h2>
+              <h2 className="stroke">ABOUT ME</h2>
             </div>
           </div>
         </div> 
         <div className="row md-marg align-items-end">
           <div className="col-lg-6">
             <div className="img md-mb50">
-              <img src="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734365487/2149029454_ubzp5t.jpg" alt="" />
-              <div className="exp">
+              <img src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691103/FB_IMG_1795690833091_cuuhuv.jpg" alt="" />
+          {/* */}    <div className="exp">
                 <h3>30th</h3>
                 <h6>
                   December <br /> 2024

@@ -3,25 +3,20 @@ import Lines from '@/components/common/Lines';
 import ProgressScroll from '@/components/common/ProgressScroll';
 import Cursor from '@/components/common/cusor';
 import LoadingScreen from '@/components/common/loader';
-import Footer from '@/components/common/Footer';
-import Marq2 from '@/components/common/Marq2';
-import Navbar from '@/components/common/Navbar';
+import Footer from '@/components/peter-eze/Footer';
+import Navbar from '@/components/peter-eze/Navbar';
 import Script from 'next/script';
-import Blog from '@/components/home-main/Blog';
-import Clients from '@/components/common/Clients';
-import Team from '@/components/home-modern-studio/Team';
-import Testimonials from '@/components/home-modern-studio/Testimonials';
-import Header from '@/components/page-about/Header';
-import Intro from '@/components/page-about/Intro';
-import Numbers from '@/components/page-about/Numbers';
-import Services from '@/components/page-about/Services';
-import JoinUs from '@/components/home-modern-studio/JoinUs';
+import Header from '@/components/peter-eze/AboutHeader';
+import Intro from '@/components/peter-eze/AboutIntro';
+import Numbers from '@/components/peter-eze/AboutNumbers';
+import Testimonials from '@/components/peter-eze/AboutTestimonials';
+import JoinUs from '@/components/peter-eze/AboutJoinUs';
 
 export const metadata = {
-  title: 'NIDFEST',
+  title: 'About Hon. Peter Ogbonna Eze | Federal Character Commissioner',
+  description:
+    'Comprehensive biography, career background, and public service record of Hon. Peter Ogbonna Eze, Federal Character Commissioner representing Enugu State.',
   icons: {
-    icon: 'https://res.cloudinary.com/dnbnev9lr/image/upload/v1734444342/New_Project__20_-removebg-preview_1_md87x7.png',
-    shortcut: 'https://res.cloudinary.com/dnbnev9lr/image/upload/v1734444342/New_Project__20_-removebg-preview_1_md87x7.png',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',
@@ -31,7 +26,7 @@ export const metadata = {
   },
 };
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <body>
       <LoadingScreen />
@@ -44,16 +39,8 @@ export default function Home() {
           <main className="main-bg o-hidden">
             <Header />
             <Intro />
-            <Numbers />
-         {/*   <Services />
- <Clients />
- <Marq2 />
-  <Blog />
-            <Team /> */}
-            <Testimonials />
-           <JoinUs/>
-           
-           
+            
+            <JoinUs />
           </main>
           <Footer />
         </div>
@@ -67,7 +54,6 @@ export default function Home() {
         src="/assets/js/ScrollSmoother.min.js"
         strategy="beforeInteractive"
       />
-
       <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
       <Script
         strategy="beforeInteractive"
@@ -81,7 +67,6 @@ export default function Home() {
         strategy="beforeInteractive"
         src="/assets/js/countdown.js"
       ></Script>
-
       <Script
         strategy="beforeInteractive"
         src="/assets/js/gsap.min.js"
@@ -98,9 +83,7 @@ export default function Home() {
         strategy="beforeInteractive"
         src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
       ></Script>
-
       {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
-
       <Script src="/assets/js/scripts.js"></Script>
     </body>
   );

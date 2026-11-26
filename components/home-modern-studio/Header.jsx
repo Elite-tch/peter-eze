@@ -99,7 +99,7 @@ function Header() {
     <div className="header modern-slider valign">
       <div className="container position-re">
         <div className="row">
-          <div className="col-lg-6 offset-lg-4">
+          <div className="col-lg-6 offset-lg-6">
             <div className="gallery-img">
               <Swiper
                 {...swiperGalleryImageOptions}
@@ -108,7 +108,7 @@ function Header() {
                 <SwiperSlide>
                   <div
                     className="bg-img"
-                    data-background="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734365449/pexels-ogonna-sylvester-ogbu-1047836026-20410318_xyswxi.jpg"
+                    data-background="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691110/FB_IMG_1795690640748_a0qkm0.jpg"
                     data-overlay-dark="3"
                   >
                     <a href="/"></a>
@@ -117,7 +117,7 @@ function Header() {
                 <SwiperSlide>
                   <div
                     className="bg-img"
-                    data-background="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734365481/pexels-efrem-efre-2786187-28284658_aulnph.jpg"
+                    data-background="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691105/FB_IMG_1795690719669_kthzxr.jpg"
                     data-overlay-dark="3"
                   >
                     <a href="/"></a>
@@ -126,7 +126,7 @@ function Header() {
                 <SwiperSlide>
                   <div
                     className="bg-img"
-                    data-background="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734365450/pexels-safari-consoler-3290243-10823273_llxaho.jpg"
+                    data-background="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691105/FB_IMG_1795690775304_luqpkb.jpg"
                     data-overlay-dark="3"
                   >
                     <a href="/"></a>
@@ -135,7 +135,7 @@ function Header() {
                 <SwiperSlide>
                   <div
                     className="bg-img"
-                    data-background="https://res.cloudinary.com/dnbnev9lr/image/upload/v1734365448/pexels-jenyzest-20438388_pc6vyi.jpg"
+                    data-background="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691105/FB_IMG_1795690743109_ourqhe.jpg"
                     data-overlay-dark="3"
                   >
                     <a href="/"></a>
@@ -145,7 +145,10 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="gallery-text">
+        <div
+          className="gallery-text"
+          style={{ maxWidth: '48vw', top: 'calc(50% + 55px)' }}
+        >
           <Swiper
             {...swiperGalleryTextOptions}
             className="swiper-container  swiper-container-initialized swiper-container-vertical"
