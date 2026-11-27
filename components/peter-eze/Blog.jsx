@@ -13,7 +13,7 @@ function Blog() {
             </h2>
             <div className="ml-auto vi-more">
               <a
-                href="/about-nidefeast"
+                href="/about"
                 className="butn butn-sm butn-bord radius-30"
               >
                 <span>View All</span>
@@ -36,17 +36,17 @@ function Blog() {
               <div className="cont pt-40">
                 <div className="info sub-title p-color d-flex align-items-center mb-15">
                   <div>
-                    <a href="/about-nidefeast">By : Office of the Commissioner</a>
+                    <a href="/about">By : Office of the Commissioner</a>
                   </div>
                   <div className="ml-30">
-                    <a href="/about-nidefeast">Official Bulletin</a>
+                    <a href="/about">Official Bulletin</a>
                   </div>
                 </div>
                 <h4>
                   Senate Confirms Hon. Peter Ogbonna Eze as FCC Commissioner Representing Enugu State
                 </h4>
                 <a
-                  href="/about-nidefeast"
+                  href="/about"
                   className="butn-crev d-flex align-items-center mt-40"
                 >
                   <span className="hover-this">
@@ -67,11 +67,11 @@ function Blog() {
               </div>
               <div className="cont pt-40">
                 <div className="info sub-title p-color d-flex align-items-center mb-15">
-                  <div><a href="/about-nidefeast">By : Hon. Peter Eze</a></div>
+                  <div><a href="/about">By : Hon. Peter Eze</a></div>
                   <div className="ml-30"><a href="/about-nidefeast">Awards &amp; Honors</a></div>
                 </div>
                 <h4>Received the Excellence in Public Service Award 2024</h4>
-                <a href="/about-nidefeast" className="butn-crev d-flex align-items-center mt-40">
+                <a href="/about" className="butn-crev d-flex align-items-center mt-40">
                   <span className="hover-this"><span className="circle hover-anim"><i className="ti-arrow-top-right"></i></span></span>
                   <span className="text">Read more</span>
                 </a>
