@@ -38,7 +38,7 @@ function Intro() {
                 Aviation.
               </p>
               <a
-                href="/about-nidefeast"
+                href="/about"
                 className="butn-crev d-flex align-items-center mt-30"
               >
                 <span className="hover-this">

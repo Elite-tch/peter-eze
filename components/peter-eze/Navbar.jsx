@@ -63,7 +63,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about-nidefeast">
+              <a className="nav-link" href="/about">
                 <span className="rolling-text">About</span>
               </a>
             </li>
@@ -82,7 +82,7 @@ function Navbar() {
 
         <div className="contact-button">
           <a
-            href="/about-nidefeast"
+            href="/about"
             className="butn butn-sm butn-bg bg-white radius-5"
           >
             <span className="text">Contact Office</span>

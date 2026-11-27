@@ -61,7 +61,7 @@ export default function Portfolio() {
               </h3>
             </div>
             <div className="ml-auto vi-more">
-              <a href="/about-nidefeast" className="butn butn-sm butn-bord radius-30">
+              <a href="/about" className="butn butn-sm butn-bord radius-30">
                 <span>View Profile</span>
               </a>
               <span className="icon ti-arrow-top-right"></span>
@@ -77,8 +77,8 @@ export default function Portfolio() {
                 <div className="cont" style={{ width: '100%' }}>
                   <div>
                     <div className="mb-15">
-                      <a href="/about-nidefeast" className="tag">Constitutional</a>
-                      <a href="/about-nidefeast" className="tag">Enugu State</a>
+                      <a href="/about" className="tag">Constitutional</a>
+                      <a href="/about" className="tag">Enugu State</a>
                     </div>
                     <h4>Enugu State Representation</h4>
                   </div>
@@ -89,7 +89,7 @@ export default function Portfolio() {
                       employment, and socio‑economic opportunities for the good
                       people of Enugu State.
                     </p>
-                    <a href="/about-nidefeast" className="underline mt-15">
+                    <a href="/about" className="underline mt-15">
                       <span className="text main-color sub-title">
                         Learn More <i className="ti-arrow-top-right"></i>
                       </span>
@@ -112,8 +112,8 @@ export default function Portfolio() {
                 <div className="cont" style={{ width: '100%' }}>
                   <div>
                     <div className="mb-15">
-                      <a href="/about-nidefeast" className="tag">Oversight</a>
-                      <a href="/about-nidefeast" className="tag">Infrastructure</a>
+                      <a href="/about" className="tag">Oversight</a>
+                      <a href="/about" className="tag">Infrastructure</a>
                     </div>
                     <h4>Works, Transport &amp; Aviation</h4>
                   </div>
@@ -124,7 +124,7 @@ export default function Portfolio() {
                       principles in federal civil works, transport frameworks,
                       and aviation infrastructure.
                     </p>
-                    <a href="/about-nidefeast" className="underline mt-15">
+                    <a href="/about" className="underline mt-15">
                       <span className="text main-color sub-title">
                         Learn More <i className="ti-arrow-top-right"></i>
                       </span>
@@ -147,8 +147,8 @@ export default function Portfolio() {
                 <div className="cont" style={{ width: '100%' }}>
                   <div>
                     <div className="mb-15">
-                      <a href="/about-nidefeast" className="tag">Youth Leadership</a>
-                      <a href="/about-nidefeast" className="tag">Human Capital</a>
+                      <a href="/about" className="tag">Youth Leadership</a>
+                      <a href="/about" className="tag">Human Capital</a>
                     </div>
                     <h4>Empowerment &amp; Interventions</h4>
                   </div>
@@ -158,7 +158,7 @@ export default function Portfolio() {
                       acquisition, and youth mentorship to empower grassroots
                       communities across Enugu State and beyond.
                     </p>
-                    <a href="/about-nidefeast" className="underline mt-15">
+                    <a href="/about" className="underline mt-15">
                       <span className="text main-color sub-title">
                         Learn More <i className="ti-arrow-top-right"></i>
                       </span>
@@ -182,7 +182,7 @@ export default function Portfolio() {
                   <div>
                     <div className="mb-15">
                       <a href="/about-nidefeast" className="tag">Accountability</a>
-                      <a href="/about-nidefeast" className="tag">Public Records"</a>
+                      <a href="/about" className="tag">Public Records"</a>
                     </div>
                     <h4>Transparency &amp; Open Records</h4>
                   </div>
@@ -193,7 +193,7 @@ export default function Portfolio() {
                       citizens to follow ongoing legislative and executive
                       interventions.
                     </p>
-                    <a href="/about-nidefeast" className="underline mt-15">
+                    <a href="/about" className="underline mt-15">
                       <span className="text main-color sub-title">
                         Learn More <i className="ti-arrow-top-right"></i>
                       </span>

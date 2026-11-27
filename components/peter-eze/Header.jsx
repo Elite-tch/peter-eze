@@ -134,7 +134,7 @@ function Header() {
               data-background="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691110/FB_IMG_1795690640748_a0qkm0.jpg"
               style={{ height: '100vh', width: '100%', backgroundSize: 'cover', backgroundPosition: 'top center' }}
             >
-              <a href="/about-nidefeast"></a>
+              <a href="/about"></a>
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ height: '100%' }}>
@@ -143,7 +143,7 @@ function Header() {
               data-background="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691105/FB_IMG_1795690719669_kthzxr.jpg"
               style={{ height: '100vh', width: '100%', backgroundSize: 'cover', backgroundPosition: 'top center' }}
             >
-              <a href="/about-nidefeast"></a>
+              <a href="/about"></a>
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ height: '100%' }}>
@@ -152,7 +152,7 @@ function Header() {
               data-background="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691105/FB_IMG_1795690775304_luqpkb.jpg"
               style={{ height: '100vh', width: '100%', backgroundSize: 'cover', backgroundPosition: 'top center' }}
             >
-              <a href="/about-nidefeast"></a>
+              <a href="/about"></a>
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ height: '100%' }}>
@@ -161,7 +161,7 @@ function Header() {
               data-background="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691103/FB_IMG_1795690833091_cuuhuv.jpg"
               style={{ height: '100vh', width: '100%', backgroundSize: 'cover', backgroundPosition: 'top center' }}
             >
-              <a href="/about-nidefeast"></a>
+              <a href="/about"></a>
             </div>
           </SwiperSlide>
         </Swiper>
@@ -204,7 +204,7 @@ function Header() {
                 </h1>
                 <p>Federal Commissioner Representing Enugu State</p>
                 <a
-                  href="/about-nidefeast"
+                  href="/about"
                   className="butn-crev d-flex align-items-center mt-30"
                 >
                   <span className="hover-this">
@@ -224,7 +224,7 @@ function Header() {
                 </h1>
                 <p>Chairman, FCC Committee on Works, Transport & Aviation</p>
                 <a
-                  href="/about-nidefeast"
+                  href="/about"
                   className="butn-crev d-flex align-items-center mt-30"
                 >
                   <span className="hover-this">
@@ -244,7 +244,7 @@ function Header() {
                 </h1>
                 <p>Promoting constitutional equity across Federal MDAs</p>
                 <a
-                  href="/about-nidefeast"
+                  href="/about"
                   className="butn-crev d-flex align-items-center mt-30"
                 >
                   <span className="hover-this">
@@ -264,7 +264,7 @@ function Header() {
                 </h1>
                 <p>Bridging governance, human capital, and community impact</p>
                 <a
-                  href="/about-nidefeast"
+                  href="/about"
                   className="butn-crev d-flex align-items-center mt-30"
                 >
                   <span className="hover-this">
