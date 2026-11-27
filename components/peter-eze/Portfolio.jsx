@@ -1,20 +1,21 @@
 'use client';
 import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 
-function Portfolio() {
+export default function Portfolio() {
+  // Initialize GSAP scroll‑pin effect on mount
   function Playing() {
     gsap.registerPlugin(ScrollTrigger);
-
-    if (window.matchMedia('(max-width: 768px)').matches) return;
-
+    // Removed mobile‑width guard – we want the effect on all devices
     const cards = document.querySelectorAll('.cards .card-item');
+    if (!cards.length) return;
     let stickDistance = 0;
 
     const firstCardST = ScrollTrigger.create({
       trigger: cards[0],
       start: 'center center',
     });
-
     const lastCardST = ScrollTrigger.create({
       trigger: cards[cards.length - 1],
       start: 'bottom bottom',
@@ -26,7 +27,6 @@ function Portfolio() {
         scale: scale,
         transformOrigin: '50% ' + (lastCardST.start + stickDistance),
       });
-
       ScrollTrigger.create({
         trigger: card,
         start: 'center center',
@@ -42,7 +42,6 @@ function Portfolio() {
 
   useEffect(() => {
     Playing();
-
     return () => {
       ScrollTrigger.getAll().forEach((instance) => instance.kill());
     };
@@ -62,16 +61,14 @@ function Portfolio() {
               </h3>
             </div>
             <div className="ml-auto vi-more">
-              <a
-                href="/about-nidefeast"
-                className="butn butn-sm butn-bord radius-30"
-              >
+              <a href="/about-nidefeast" className="butn butn-sm butn-bord radius-30">
                 <span>View Profile</span>
               </a>
               <span className="icon ti-arrow-top-right"></span>
             </div>
           </div>
         </div>
+        {/* Static cards – this layout now works on both desktop and mobile */}
         <div className="cards">
           {/* Card 1 */}
           <div className="card-item sub-bg" style={{ background: '#007a3d', backgroundColor: '#007a3d' }}>
@@ -89,7 +86,7 @@ function Portfolio() {
                     <p>
                       Safeguarding Section 14(3) of the Nigerian Constitution to
                       ensure equitable distribution of public offices, federal
-                      employment, and socio-economic opportunities for the good
+                      employment, and socio‑economic opportunities for the good
                       people of Enugu State.
                     </p>
                     <a href="/about-nidefeast" className="underline mt-15">
@@ -108,7 +105,6 @@ function Portfolio() {
               </div>
             </div>
           </div>
-
           {/* Card 2 */}
           <div className="card-item sub-bg" style={{ background: '#007a3d', backgroundColor: '#007a3d' }}>
             <div className="row" style={{ margin: 0, minHeight: '480px' }}>
@@ -119,7 +115,7 @@ function Portfolio() {
                       <a href="/about-nidefeast" className="tag">Oversight</a>
                       <a href="/about-nidefeast" className="tag">Infrastructure</a>
                     </div>
-                    <h4>Works, Transport & Aviation</h4>
+                    <h4>Works, Transport &amp; Aviation</h4>
                   </div>
                   <div>
                     <p>
@@ -138,13 +134,12 @@ function Portfolio() {
               </div>
               <div className="col-lg-7" style={{ padding: 0, minHeight: '480px', overflow: 'hidden' }}>
                 <div className="img" style={{ height: '100%', minHeight: '480px', padding: 0, overflow: 'hidden' }}>
-                  <img src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691105/FB_IMG_1795690817619_f4frhv.jpg" alt="Works & Aviation"
+                  <img src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691105/FB_IMG_1795690817619_f4frhv.jpg" alt="Works &amp; Aviation"
                     style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }} />
                 </div>
               </div>
             </div>
           </div>
-
           {/* Card 3 */}
           <div className="card-item sub-bg" style={{ background: '#007a3d', backgroundColor: '#007a3d' }}>
             <div className="row" style={{ margin: 0, minHeight: '480px' }}>
@@ -155,7 +150,7 @@ function Portfolio() {
                       <a href="/about-nidefeast" className="tag">Youth Leadership</a>
                       <a href="/about-nidefeast" className="tag">Human Capital</a>
                     </div>
-                    <h4>Empowerment & Interventions</h4>
+                    <h4>Empowerment &amp; Interventions</h4>
                   </div>
                   <div>
                     <p>
@@ -179,7 +174,6 @@ function Portfolio() {
               </div>
             </div>
           </div>
-
           {/* Card 4 */}
           <div className="card-item sub-bg" style={{ background: '#007a3d', backgroundColor: '#007a3d' }}>
             <div className="row" style={{ margin: 0, minHeight: '480px' }}>
@@ -188,9 +182,9 @@ function Portfolio() {
                   <div>
                     <div className="mb-15">
                       <a href="/about-nidefeast" className="tag">Accountability</a>
-                      <a href="/about-nidefeast" className="tag">Public Records</a>
+                      <a href="/about-nidefeast" className="tag">Public Records"</a>
                     </div>
-                    <h4>Transparency & Open Records</h4>
+                    <h4>Transparency &amp; Open Records</h4>
                   </div>
                   <div>
                     <p>
@@ -209,23 +203,21 @@ function Portfolio() {
               </div>
               <div className="col-lg-7" style={{ padding: 0, minHeight: '480px', overflow: 'hidden' }}>
                 <div className="img" style={{ height: '100%', minHeight: '480px', padding: 0, overflow: 'hidden' }}>
-                  <img src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1795691105/FB_IMG_1795690817619_f4frhv.jpg" alt="Transparency"
+                  <img src="https://res.cloudinary.com/dibbnfwk9/image/upload/v1795691105/FB_IMG_1795690817619_f4frhv.jpg" alt="Transparency"
                     style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }} />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="sec-bottom mt-100">
-        <div className="main-bg d-flex align-items-center">
-          <h6 className="fz-14 fw-400">
-            Dedicated to <span className="fw-600"> Equitable Representation</span> and Constitutional Fairness
-          </h6>
+        <div className="sec-bottom mt-100">
+          <div className="main-bg d-flex align-items-center">
+            <h6 className="fz-14 fw-400">
+              Dedicated to <span className="fw-600">Equitable Representation</span> and Constitutional Fairness
+            </h6>
+          </div>
         </div>
       </div>
     </section>
   );
 }
-
-export default Portfolio;
