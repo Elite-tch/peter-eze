@@ -181,7 +181,7 @@ export default function Portfolio() {
                 <div className="cont" style={{ width: '100%' }}>
                   <div>
                     <div className="mb-15">
-                      <a href="/about-nidefeast" className="tag">Accountability</a>
+                      <a href="/about" className="tag">Accountability</a>
                       <a href="/about" className="tag">Public Records"</a>
                     </div>
                     <h4>Transparency &amp; Open Records</h4>
