@@ -1,5 +1,89 @@
-import { redirect } from 'next/navigation';
+import generateStylesheetObject from '@/common/generateStylesheetsObject';
+import Lines from '@/components/common/Lines';
+import ProgressScroll from '@/components/common/ProgressScroll';
+import Cursor from '@/components/common/cusor';
+import LoadingScreen from '@/components/common/loader';
+import Script from 'next/script';
+import Navbar from '@/components/peter-eze/Navbar';
+import Footer from '@/components/peter-eze/Footer';
+import Header from '@/components/peter-eze/Header';
+import Intro from '@/components/peter-eze/Intro';
+import Portfolio from '@/components/peter-eze/Portfolio';
+import Blog from '@/components/peter-eze/Blog';
+
+export const metadata = {
+  title: 'Hon. Peter Ogbonna Eze | Federal Character Commissioner - Enugu State',
+  description:
+    'Official website and digital public records of Hon. Peter Ogbonna Eze, Federal Character Commissioner representing Enugu State and Chairman, Committee on Works, Transport & Aviation.',
+  icons: {
+    other: generateStylesheetObject([
+      '/assets/css/plugins.css',
+      '/landing-preview/css/preview-style.css',
+      '/assets/css/style.css',
+      'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
+      'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap',
+    ]),
+  },
+};
 
 export default function Home() {
-  redirect('/peter-eze');
+  return (
+    <body style={{ background: '#ffffff', backgroundColor: '#ffffff' }}>
+      <LoadingScreen />
+      <Cursor />
+      <ProgressScroll />
+      <Lines />
+      <Navbar />
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <main style={{ background: '#ffffff', backgroundColor: '#ffffff' }}>
+            <Header />
+            <Intro />
+            <Portfolio />
+            <Blog />
+          </main>
+          <Footer />
+        </div>
+      </div>
+      <Script
+        src="/assets/js/ScrollTrigger.min.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        src="/assets/js/ScrollSmoother.min.js"
+        strategy="beforeInteractive"
+      />
+      <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
+      <Script
+        strategy="beforeInteractive"
+        src="/assets/js/TweenMax.min.js"
+      ></Script>
+      <Script
+        strategy="beforeInteractive"
+        src="/assets/js/charming.min.js"
+      ></Script>
+      <Script
+        strategy="beforeInteractive"
+        src="/assets/js/countdown.js"
+      ></Script>
+      <Script
+        strategy="beforeInteractive"
+        src="/assets/js/gsap.min.js"
+      ></Script>
+      <Script
+        strategy="beforeInteractive"
+        src="/assets/js/splitting.min.js"
+      ></Script>
+      <Script
+        strategy="beforeInteractive"
+        src="/assets/js/isotope.pkgd.min.js"
+      ></Script>
+      <Script
+        strategy="beforeInteractive"
+        src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
+      ></Script>
+      {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
+      <Script src="/assets/js/scripts.js"></Script>
+    </body>
+  );
 }
